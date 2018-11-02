@@ -1,0 +1,18 @@
+{
+  "name": "mubotcli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mu.html",
+  "scripts": {
+    "start": "nw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "fullscreen": true
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "nw": "^0.34.1"
+  }
+}

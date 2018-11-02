@@ -1,0 +1,70 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<script type="text/javascript" charset="utf-8" async defer>
+    function scrollpage() {     
+    function f() 
+    {
+        window.scrollTo(0,i);
+        if(status==0) {
+            i=i+40;
+        } else {
+            i=i-40;
+            if(i<=1){   status=0; }  // if you don't want continue scroll then remove this line
+        }
+    setTimeout( f, 0.01 );
+    }f();
+}
+var Height=document.documentElement.scrollHeight;
+var i=1,j=Height,status=0;
+scrollpage();
+</script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<style type="text/css">
+
+	* {
+		background-color: #2C2F33;
+	}
+
+	iframe.mu {		
+	-webkit-transform: scale(2);
+	-webkit-transform-origin: 0 0;
+		height: 90%;
+		width: 49%;
+		align-content: center;
+        border-radius: 10px;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+  transition: all 0.3s; 
+  border-radius: 3px;
+	}
+    iframe.mu:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+}
+
+    .float{
+        position:fixed;
+        width:30px;
+        height:30px;
+        bottom:40px;
+        right:40px;
+        background-color: lightpink;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        box-shadow: 2px 2px 3px #999;
+    }
+
+    .floats {
+        margin-top:22px;   
+    }
+
+</style>
+<div id="top">top</div>
+<iframe
+	frameborder=0 framespacing=0 marginheight=0 marginwidth=0
+	class="mu"
+    src="https://console.dialogflow.com/api-client/demo/embedded/DiscordMuBotAPI">
+</iframe>
+
+<a href="mu.html" class="float"><i class="floats"></i></a>
+
+<div id="bottom"></div>
